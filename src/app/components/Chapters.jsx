@@ -27,7 +27,7 @@ const chapters = [
 
 export default function KeySection() {
   return (
-    <section className="w-full min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-20 py-20 gap-10 md:gap-10">
+    <section className="w-full min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-20 py-20 gap-10 md:gap-10" id="about">
       {/* Big Number Section */}
       <div className="relative flex flex-col items-center w-full md:w-[48%]">
           <Image src="/images/keys.png" width={1822} height={1529} alt="Keys" />

@@ -39,7 +39,7 @@ const roadmap = [
 
 export default function RoadmapSection() {
   return (
-    <section className="relative bg-[#050510] text-white py-16 md:py-24 px-6 overflow-hidden">
+    <section className="relative bg-[#050510] text-white py-16 md:py-24 px-6 overflow-hidden" id="roadmap">
 
       {/* Background Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.25),transparent_60%)]" />

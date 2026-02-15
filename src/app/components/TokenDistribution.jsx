@@ -11,7 +11,7 @@ const distributionData = [
 
 export default function TokenDistribution() {
   return (
-    <section className="px-4 md:px-16 py-12 bg-black text-white rounded-t-4xl relative z-12 -mt-8">
+    <section className="px-4 md:px-16 py-12 bg-black text-white rounded-t-4xl relative z-12 -mt-8" id="tokenomics">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col justify-between md:items-start gap-6">
           <div className="w-full flex-col md:flex-row items-end justify-between mb-10">

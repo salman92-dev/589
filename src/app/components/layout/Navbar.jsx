@@ -141,7 +141,7 @@ export default function Navbar() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.25 }}
-              className="w-full mt-2 bg-white text-black font-semibold px-4 py-3 rounded-lg"
+              className="w-full mt-2 text-xl bg-white text-black coconutz font-semibold px-4 py-3 rounded-lg"
             >
               Buy Now
             </motion.button>
