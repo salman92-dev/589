@@ -10,6 +10,7 @@ import PresaleSection from "./components/Presale";
 import RoadmapSection from "./components/Roadmap";
 import HeroSection2 from "./components/Hero2";
 import Distribution_extend from "./components/Distribution-extend";
+import WhySolanaMobile from "./components/WhySolanaMobile";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Distribution_extend/>
       <KeySection />
       <SolanaSection/>
+      <WhySolanaMobile/>
       <PresaleSection/>
       <RoadmapSection/>
       <HeroSection2/>

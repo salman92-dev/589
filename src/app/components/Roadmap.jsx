@@ -1,7 +1,7 @@
 "use client"
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
+import Image from "next/image";
 const roadmap = [
   {
     quarter: "Q1 2026",
@@ -40,7 +40,24 @@ const roadmap = [
 export default function RoadmapSection() {
   return (
     <section className="relative bg-[#050510] text-white py-16 md:py-24 px-6 overflow-hidden" id="roadmap">
-
+        <Image src="/images/roadmap-line.png" alt="line" width={96} height={2266} className="sm:hidden absolute w-9 bottom-6" />
+        <motion.div
+      className="sm:hidden absolute w-24 top-30 right-10"
+      initial={{ y: 0, rotate: -2 }}
+      animate={{ y: [0, -12, 0], rotate: [-2, 2, -2] }}
+      transition={{
+        duration: 3,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
+    >
+      <Image
+        src="/images/road-img.png"
+        alt="line"
+        width={141}
+        height={149}
+      />
+    </motion.div>
       {/* Background Glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.25),transparent_60%)]" />
 
@@ -52,7 +69,7 @@ export default function RoadmapSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-6xl font-bold text-center mb-2 md:mb-24"
+          className="text-[2.7rem] md:text-6xl font-bold text-center mb-2 md:mb-24 max-sm:px-8 max-sm:leading-[110%]"
         >
           Our Plan for ahead
         </motion.h2>
@@ -74,7 +91,7 @@ export default function RoadmapSection() {
           </div>
 
           {/* Timeline Items */}
-          <div className="grid md:grid-cols-4 gap-6 md:gap-16 md:gap-10 relative py-12 md:py-20">
+          <div className="grid md:grid-cols-4 gap-6 md:gap-16 md:gap-10 relative max-sm:pt-12 py-0 md:py-20 max-sm:pl-14">
 
             {roadmap.map((item, index) => (
               <motion.div

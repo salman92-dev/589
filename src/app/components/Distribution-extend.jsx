@@ -26,7 +26,7 @@ const Distribution_extend = () => {
         <Image src="/images/ufo-2.png" alt="ufo" width={338} height={186} />
       </motion.div>
       {/* Background Image */}
-      <div className="2xl:container mx-auto">
+      <div className="2xl:container mx-auto pb-14">
         <Image
           src="/images/distribution-img.png"
           alt="distribution"
@@ -37,7 +37,7 @@ const Distribution_extend = () => {
       </div>
 
       {/* Marquee */}
-      <div className="absolute bottom-0 left-0 w-full bg-[linear-gradient(90deg,#E81ABF_0%,#7615FF_50%,#EE5F17_100%)] backdrop-blur-md py-4">
+      <div className="absolute z-12 -bottom-0 md:bottom-0 left-0 w-full bg-[linear-gradient(90deg,#E81ABF_0%,#7615FF_50%,#EE5F17_100%)] backdrop-blur-md py-4">
         <Marquee
           speed={50}
           gradient={false}

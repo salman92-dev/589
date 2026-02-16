@@ -63,10 +63,12 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
         
         {/* Left Logo */}
-        <div className="flex items-center gap-2 text-white font-bold text-2xl">
+        <div className="hidden md:block flex items-center gap-2 text-white font-bold text-2xl">
           <Image src="/images/logo.png" alt="Logo" width={333} height={120}  className="w-34"/>
         </div>
-
+        <div className="md:hidden flex items-center gap-2 text-white font-bold text-2xl">
+          <Image src="/images/mobile-logo.png" alt="Logo" width={333} height={120}  className="w-14"/>
+        </div>
         {/* Desktop Center Menu */}
         <motion.div
           variants={menuContainer}
@@ -123,7 +125,7 @@ export default function Navbar() {
             {links.map((item, i) => (
               <motion.a
               href={item.link}
-                key={item}
+                key={i}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: i * 0.05 }}

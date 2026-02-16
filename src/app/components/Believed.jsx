@@ -44,7 +44,7 @@ const cards = [
 
 export default function BelievedSection() {
   return (
-    <section className="relative overflow-hidden text-white py-20 md:py-28 border-t border-white/45 believe">
+    <section className="relative overflow-hidden text-white py-10 max-sm:pb-28 md:py-28 border-t border-white/45 believe">
       
       {/* Background glow */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(120,50,255,0.25),transparent_60%)]" />
@@ -69,7 +69,7 @@ export default function BelievedSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
           viewport={{ once: true }}
-          className="text-center mt-5 text-3xl md:text-5xl s-medium"
+          className="text-center mt-5 text-4xl md:text-5xl s-medium"
         >
           They believed us
         </motion.h2>
@@ -118,7 +118,7 @@ export default function BelievedSection() {
             hidden: {},
             show: { transition: { staggerChildren: 0.12 } },
           }}
-          className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto"
+          className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto max-sm:px-8"
         >
           {cards.map((card, i) => {
             const Icon = card.icon;
@@ -130,7 +130,7 @@ export default function BelievedSection() {
                   show: { opacity: 1, y: 0 },
                 }}
                 whileHover={{ y: -6, scale: 1.02 }}
-                className="rounded-[11px] bg-[#2E1A2A] h-full backdrop-blur-md py-8 px-6 text-center"
+                className="rounded-[25px] md:rounded-[11px] bg-black md:bg-[#2E1A2A] h-full backdrop-blur-md py-8 px-6 text-center"
               >
                 <div className="mx-auto mb-4 w-10 h-10 rounded-full bg-[linear-gradient(180deg,#6153B0_0%,#312784_100%)] flex items-center justify-center shadow-[0_0_25px_rgba(168,85,247,0.6)]">
                   <Image src={card.icon} alt={card.title} width={34} height={42} className={`${card.width}`}/>

@@ -11,7 +11,7 @@ const badges = [
 
 export default function SolanaSection() {
   return (
-    <section className="relative overflow-hidden text-white">
+    <section className="relative hidden md:block overflow-hidden text-white">
       <Image src="/images/solana-bg.png" alt="solana" width={2830} height={3332} className=""/>
       {/* Background Glow */}
       <div className="absolute inset-20 bg-[radial-gradient(circle_at_center,rgba(168,85,247,0.25),transparent_60%)]" />

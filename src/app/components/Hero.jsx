@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function HeroSection() {
   return (
     <section className="relative min-h-[100vh] md:min-h-[130vh] w-full overflow-hidden text-white">
-      <Image src="/images/hero-img.png" alt="hero-img" width={126} height={311} className="absolute z-12 w-20 md:w-30 right-12 bottom-20 md:right-132 md:bottom-24" />
+      <Image src="/images/hero-img.png" alt="hero-img" width={126} height={311} className="absolute z-12 w-14 md:w-30 right-24 bottom-58 md:right-132 md:bottom-24" />
       {/* NAVBAR */}
       <Navbar />
 
@@ -17,9 +17,15 @@ export default function HeroSection() {
         alt="Space Background"
         fill
         priority
-        className="object-cover scale-100"
+        className="hidden md:block object-cover scale-100"
       />
-
+      <Image
+        src="/images/hero-mobile.png"
+        alt="Space Background"
+        fill
+        priority
+        className="md:hidden object-cover scale-100"
+      />
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/20 z-10" />
 
@@ -32,7 +38,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="max-w-4xl"
+            className="max-w-4xl max-sm:mt-20"
           >
             {/* Subtitle */}
             <motion.p
@@ -61,7 +67,7 @@ export default function HeroSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.55 }}
-              className="relative mt-4 max-w-xl leading-[110%] text-lg sm:text-base md:text-[1.4rem] text-white u-regular"
+              className="max-sm:hidden relative mt-4 max-w-xl leading-[110%] text-lg sm:text-base md:text-[1.4rem] text-white u-regular"
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -73,7 +79,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.75 }}
-              className="mt-8 flex flex-wrap gap-4"
+              className="max-sm:mt-64 mt-8 flex flex-wrap max-sm:justify-center  gap-4"
             >
               <motion.button
                 whileHover={{ scale: 1.05 }}

@@ -101,7 +101,7 @@ body {
 @media screen and (max-width:600px) {
  .believe {
   background: url(/images/believe-bg.png)no-repeat;
-  background-size: 100% 40%;
+  background-size: 350% 40%;
   background-position: bottom center;
 } 
 }
