@@ -18,7 +18,7 @@ export default function BottomSection() {
           <Image src="/images/loader.png" alt="loader" width={1178} height={304}/>
           <div className="flex justify-between">
             <p className="text-gray-400 text-sm">USDT RAISED</p>
-            <p className="text-white font-semibold">$14,213,988 / $15,125,000</p>
+            <p className="text-white max-sm:text-sm">$14,213,988 / $15,125,000</p>
           </div>
         </div>
         <Image src="/images/graph-ql.png" alt="loader" width={1324} height={844}/>
