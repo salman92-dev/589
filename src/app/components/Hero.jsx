@@ -85,7 +85,7 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="coconutz px-6 py-3 rounded-lg bg-[linear-gradient(180deg,#6153B0_0%,#312784_100%)] hover:bg-indigo-500 transition text-lg md:text-xl border-1 border-white/34 shadow-[0px_0px_100px_1px_#5749A6]"
-              >
+              onClick={() => window.location.href = '/dashboard'}>
                 Enter Presale
               </motion.button>
 
