@@ -97,7 +97,21 @@ body {
   background-position: bottom center;
 }
 
+/* Hide scrollbar but allow scrolling */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera */
+}
+
+.bg-1 {
+  background: url(/images/bg-1.png)no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
 @media screen and (max-width:600px) {
  .believe {
   background: url(/images/believe-bg.png)no-repeat;
